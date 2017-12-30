@@ -1,0 +1,25 @@
+{
+  "name": "drupal/bt_commerce",
+  "type": "drupal-module",
+  "description": "",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Roberto Araya",
+      "email": "roberto.araya@btester.cl",
+      "homepage": "https://www.drupal.org/u/roberto_araya",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://www.drupal.org/project/bt_commerce",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bt_commerce",
+    "source": "http://cgit.drupalcode.org/bt_commerce"
+  },
+  "require": {
+    "drupal/bt_core": "dev-master",
+    "drupal/commerce": "2.x-dev"
+  }
+}

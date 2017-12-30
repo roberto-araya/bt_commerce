@@ -1,0 +1,8 @@
+name: Btester Commerce
+type: module
+description: My Awesome Module
+core: 8.x
+package: Btester
+dependencies:
+  - commerce
+  - bt_core
