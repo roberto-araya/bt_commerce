@@ -1,0 +1,7 @@
+bt_commerce.dashboard_menu:
+  title: 'Commerce'
+  description: 'Commerce Dashboard'
+  route_name: bt_commerce.dashboard
+  weight: 2
+  expanded: TRUE
+  menu_name: bt-menu-app

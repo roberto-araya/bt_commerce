@@ -1,8 +1,18 @@
 name: Btester Commerce
 type: module
-description: My Awesome Module
+description: Commerce integration
 core: 8.x
+core_version_requirement: ^8
 package: Btester
 dependencies:
-  - commerce
-  - bt_core
+  - commerce:commerce
+  - commerce:commerce_cart
+  - commerce:commerce_checkout
+  - commerce:commerce_number_pattern
+  - commerce:commerce_payment
+  - commerce:commerce_price
+  - commerce:commerce_product
+  - commerce:commerce_promotion
+  - commerce:commerce_store
+  - commerce:commerce_tax
+  - bt_core:bt_core

@@ -1,0 +1,10 @@
+services:
+  bt_commerce.config.overrider:
+    class: Drupal\bt_commerce\Config\ConfigCommerceOverride
+    arguments: ['@config.factory']
+    tags:
+      - {name: config.factory.override, priority: 25}
+  bt_commerce.route_subscriber:
+    class: Drupal\bt_commerce\Routing\CommerceRouteSubscriber
+    tags:
+      - { name: event_subscriber, priority: -500 }

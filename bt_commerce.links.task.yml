@@ -1,0 +1,35 @@
+bt_commerce.dashboard_task:
+  title: 'Commerce'
+  route_name: bt_commerce.dashboard
+  base_route: bt_commerce.dashboard
+  weight: -1
+
+bt_commerce.orders_list_task:
+  title: 'Orders list'
+  route_name: entity.commerce_order.collection
+  parent_id: entity.commerce_order.collection
+  weight: -1
+
+bt_commerce.carts_list_task:
+  title: 'Carts'
+  route_name: view.commerce_carts.page_1
+  parent_id: entity.commerce_order.collection
+  weight: -1
+
+bt_commerce.product_attributes_task:
+  title: 'Products Attributes'
+  route_name: entity.commerce_product_attribute.collection
+  base_route: bt_commerce.dashboard
+  weight: 1
+
+bt_commerce.products_task:
+  title: 'Products'
+  route_name: entity.commerce_product.collection
+  base_route: bt_commerce.dashboard
+  weight: 2
+
+bt_commerce.promotions_task:
+  title: 'Promotions'
+  route_name: entity.commerce_promotion.collection
+  base_route: bt_commerce.dashboard
+  weight: 3

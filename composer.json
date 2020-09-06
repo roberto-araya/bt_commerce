@@ -3,7 +3,7 @@
   "type": "drupal-module",
   "description": "",
   "keywords": ["Drupal"],
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Roberto Araya",
@@ -19,7 +19,7 @@
     "source": "http://cgit.drupalcode.org/bt_commerce"
   },
   "require": {
-    "drupal/bt_core": "dev-master",
-    "drupal/commerce": "2.x-dev"
+    "drupal/bt_core": "dev-1.x",
+    "drupal/commerce": "dev-2.x"
   }
 }

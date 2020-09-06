@@ -1,0 +1,9 @@
+bt_commerce.dashboard:
+    path: '/app/commerce' 
+    defaults: 
+      _controller: '\Drupal\bt_core\Controller\AppController::content' 
+      _title: 'Commerce Dashboard'
+    requirements: 
+      _permission: 'access content'
+    options:
+      _admin_route: TRUE

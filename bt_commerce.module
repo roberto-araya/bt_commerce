@@ -22,3 +22,20 @@ function bt_commerce_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function bt_commerce_local_tasks_alter(&$local_tasks) {
+  $local_tasks['entity.commerce_order.collection']['base_route'] = 'bt_commerce.dashboard';
+}
+
+/**
+ * Implements hook_menu_links_discovered_alter().
+ */
+function bt_commerce_menu_links_discovered_alter(&$links) {
+  $links['entity.commerce_order.collection']['parent'] = 'bt_commerce.dashboard_menu';
+  $links['entity.commerce_product_attribute.collection']['parent'] = 'bt_commerce.dashboard_menu';
+  $links['entity.commerce_product.collection']['parent'] = 'bt_commerce.dashboard_menu';
+  $links['entity.commerce_promotion.collection']['parent'] = 'bt_commerce.dashboard_menu';
+}
