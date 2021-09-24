@@ -41,22 +41,6 @@ jobs:
       - image: circleci/php:7.3-cli-browsers
     <<: *job-build
 
-  build-php-7.4-legacy:
-    <<: *container_config
-    environment:
-      DRUPAL_VERSION: 8.8.6
-      DRUPAL_PROJECT_SHA: 04a3fe08d35bfdbdcb9718556fbe8181cd111ff0
-    <<: *job-build
-
-  build-php-7.3-legacy:
-    <<: *container_config
-    docker:
-      - image: circleci/php:7.3-cli-browsers
-    environment:
-      DRUPAL_VERSION: 8.8.6
-      DRUPAL_PROJECT_SHA: 04a3fe08d35bfdbdcb9718556fbe8181cd111ff0
-    <<: *job-build
-
   deploy:
     <<: *container_config
     environment:
@@ -80,20 +64,10 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - build-php-7.4-legacy:
-          filters:
-            tags:
-              only: /.*/
-      - build-php-7.3-legacy:
-          filters:
-            tags:
-              only: /.*/
       - deploy:
           requires:
             - build-php-7.4
             - build-php-7.3
-            - build-php-7.4-legacy
-            - build-php-7.3-legacy
           filters:
             tags:
               only: /.*/
