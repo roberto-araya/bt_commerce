@@ -1,8 +1,7 @@
 name: Btester Commerce
 type: module
 description: Commerce integration
-core: 8.x
-core_version_requirement: ^8
+core_version_requirement: ^8.8
 package: Btester
 dependencies:
   - commerce:commerce
