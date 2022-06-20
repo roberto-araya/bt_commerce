@@ -117,17 +117,25 @@ mkdir -p "${BUILD_DIR}/web/modules/${MODULE}"
 ln -s "$(pwd)"/* "${BUILD_DIR}/web/modules/${MODULE}" && rm "${BUILD_DIR}/web/modules/${MODULE}/${BUILD_DIR}"
 
 echo "==> Enable module ${MODULE}."
-"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable bt_core -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable bt_cms -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable bt_media -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable taxonomy_menu -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable bt_image -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable entity -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable address -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce -y
-"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_tax -y
-"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_store -y
-"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_promotion -y
-"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_product -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable profile -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable state_machine -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_price -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_store -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_number_pattern -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_product -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_order -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_payment -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_cart -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_checkout -y
-"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_number_pattern -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_tax -y
+"${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable commerce_promotion -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" pm:enable "${MODULE}" -y
 "${BUILD_DIR}/vendor/bin/drush" -r "${BUILD_DIR}/web" cr
 
