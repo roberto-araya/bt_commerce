@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.bt-product-categories
+    - taxonomy.vocabulary.bt_product_categories
+id: bt_product_categories
+label: 'Product Categories'
+vocabulary: bt_product_categories
+menu: bt-product-categories
+expanded: true
+depth: 4
+menu_parent: 'admin:'
+description_field_name: ''
+use_term_weight_order: true

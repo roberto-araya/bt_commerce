@@ -15,3 +15,5 @@ dependencies:
   - commerce:commerce_store
   - commerce:commerce_tax
   - bt_core:bt_core
+  - bt_image:bt_image
+  - taxonomy_menu:taxonomy_menu

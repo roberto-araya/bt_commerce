@@ -20,6 +20,8 @@
   },
   "require": {
     "drupal/bt_core": "^2.0.0-alpha4",
-    "drupal/commerce": "^2.27"
+    "drupal/bt_image": "^2.0.0-alpha2",
+    "drupal/commerce": "^2.27",
+    "drupal/taxonomy_menu": "^3.5"
   }
 }

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bt-product-categories
+label: 'Product Categories'
+description: 'Product Categories'
+locked: false
