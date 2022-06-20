@@ -5,3 +5,19 @@ bt_commerce.dashboard_menu:
   weight: 2
   expanded: TRUE
   menu_name: bt-menu-app
+bt_commerce.product_add_menu:
+  title: 'Add product'
+  description: 'Add a new product'
+  parent: entity.commerce_product.collection
+  route_name: entity.commerce_product.add_page
+  weight: 0
+  expanded: TRUE
+  menu_name: bt-menu-app
+bt_commerce.product_attribute_add_menu:
+  title: 'Add product attribute'
+  description: 'Add a new product attribute'
+  parent: entity.commerce_product_attribute.collection
+  route_name: entity.commerce_product_attribute.add_form
+  weight: 0
+  expanded: TRUE
+  menu_name: bt-menu-app
