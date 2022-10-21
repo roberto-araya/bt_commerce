@@ -17,7 +17,7 @@ class ConfigCommerceOverride implements ConfigFactoryOverrideInterface {
     $overrides = [];
 
     if (in_array('views.view.commerce_orders', $names)) {
-      $overrides['views.view.commerce_orders']['display']['page_1']['display_options']['path'] = 'app/commerce/orders';
+      $overrides['views.view.commerce_orders']['display']['page_1']['display_options']['path'] = 'app/commerce/orders/list';
     }
 
     if (in_array('views.view.commerce_carts', $names)) {
