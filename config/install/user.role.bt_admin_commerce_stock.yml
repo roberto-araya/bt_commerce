@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_stock
+id: bt_admin_commerce_stock
+label: 'Admin Commerce Stock'
+weight: 26
+is_admin: null
+permissions:
+  - 'access commerce stock administration pages'

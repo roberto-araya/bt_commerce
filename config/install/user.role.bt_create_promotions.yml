@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_promotion
+id: bt_create_promotions
+label: 'Create Promotions'
+weight: 25
+is_admin: null
+permissions:
+  - 'access commerce_promotion overview'
+  - 'create commerce_promotion'
+  - 'delete own commerce_promotion'
+  - 'duplicate any commerce_promotion'
+  - 'duplicate own commerce_promotion'
+  - 'update own commerce_promotion'
+  - 'view commerce_promotion'

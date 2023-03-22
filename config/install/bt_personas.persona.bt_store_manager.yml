@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.bt_admin_commerce_orders
+    - user.role.bt_create_products
+    - user.role.bt_create_promotions
+id: bt_store_manager
+label: 'Store Manager'
+roles:
+  bt_admin_commerce_orders: bt_admin_commerce_orders
+  bt_create_products: bt_create_products
+  bt_create_promotions: bt_create_promotions
