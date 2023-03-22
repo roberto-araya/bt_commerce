@@ -14,6 +14,7 @@ dependencies:
   - commerce:commerce_promotion
   - commerce:commerce_store
   - commerce:commerce_tax
+  - commerce_stock:commerce_stock
   - bt_core:bt_core
   - bt_image:bt_image
   - taxonomy_menu:taxonomy_menu
