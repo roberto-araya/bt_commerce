@@ -127,7 +127,9 @@ php -d memory_limit=-1 "$(command -v composer)" --working-dir="${BUILD_DIR}" req
   dealerdirect/phpcodesniffer-composer-installer \
   phpspec/prophecy-phpunit:^2 \
   mglaman/drupal-check \
-  palantirnet/drupal-rector
+  palantirnet/drupal-rector \
+  drupal/coder \
+  symfony/phpunit-bridge
 cp "${BUILD_DIR}/vendor/palantirnet/drupal-rector/rector.php" "${BUILD_DIR}/."
 
 echo "-------------------------------"
