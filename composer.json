@@ -19,8 +19,9 @@
     "source": "http://cgit.drupalcode.org/bt_commerce"
   },
   "require": {
-    "drupal/bt_core": "^2.0.0-alpha4",
-    "drupal/bt_image": "^2.0.0-alpha2",
+    "drupal/core": "~9.4.0",
+    "drupal/bt_core": "~2.0.0",
+    "drupal/bt_image": "~2.0.0",
     "drupal/commerce": "^2.27",
     "drupal/commerce_invoice": "^2.0@RC",
     "drupal/commerce_stock": "^1.0",
