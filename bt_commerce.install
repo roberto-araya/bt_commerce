@@ -14,13 +14,13 @@ function bt_commerce_install() {
     'user.role.anonymous',
     'user.role.authenticated',
   ];
-  
+
   $new_permissions = [
     'access checkout',
     'view commerce_product',
     'view default commerce_product',
   ];
-  
+
   foreach ($roles as $role) {
     $permissions = $configFactory->get($role)->get('permissions');
     $config = $configFactory->getEditable($role);
